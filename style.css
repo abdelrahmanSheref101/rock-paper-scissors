@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+        background-color: #5e2323;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+
+        font-size: 25px;
+}
+
+h1,
+body {
+        color: #f4e2e2;
+}
+
+.dashboard,
+.choice-selection {
+        color: #dee9ce;
+}
+
+/* BORDER */
+.dashboard.main,
+.dashboard.main .title,
+.dashboard.main .scores,
+div.current-result,
+div.choice-selection {
+        border: 2px solid black;
+        border-radius: 10px;
+}
+
+.dashboard.main {
+        width: 75%;
+        background-color: #f16e6e;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+}
+
+.dashboard.main .title {
+        font-size: 35px;
+        font-weight: 600;
+        padding: 5px 0px;
+}
+
+.dashboard.main .scores {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+}
+
+.dashboard.main .scores .human,
+.dashboard.main .scores .computer {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+}
+
+.dashboard.main .scores .human .score-title,
+.dashboard.main .scores .computer .score-title {
+        width: 100%;
+        flex: 1 1 auto;
+        border-bottom: 2px solid black;
+        padding: 15px 0px;
+}
+
+.dashboard.main .scores .human {
+        border-right: 2px solid black;
+}
+
+span.score {
+        padding: 10px 0px;
+}
+
+div.current-result {
+        padding: 10px 0;
+}
+
+div.current-result .res {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #783253;
+}
+
+div.choice-selection {
+        width: 50%;
+        background-color: #f16e6e;
+        padding: 15px 0px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+        gap: 15px;
+}
+
+div.choice-selection.title,
+div.choice-selection.btns {
+        flex: 1 1 auto;
+}
+
+div.choice-selection .btns {
+        display: flex;
+        gap: 5px;
+        width: 75%;
+        padding: 5px;
+}
+
+#rock,
+#paper,
+#scissors {
+        flex: 0.5 1 auto;
+        background-color: transparent;
+        font-size: 35px;
+        border: 0px;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+        background-color: #b993937a;
+        border: 1px solid #520a0ab0;
+        border-radius: 10px;
+}

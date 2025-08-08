@@ -5,17 +5,38 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Rock-Paper-Scissors</title>
-        <script src="./script.js"></script>
+        <script  src="./script.js" defer></script>
+        <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
-        <script>
-                // console.log(getComputerChoice());
-                // console.log(getHumanChoice());
-                // console.log(humanScore);
-                // console.log(computerScore);
-                playGame();
-        </script>
+        <h1>Rock-Paper-Scissors</h1>
+        <div class="dashboard main">
+                <div class="title">Dashboard</div>
+                <div class="scores">
+                        <div class="human">
+                                <span class="score-title">HUMAN</span>
+                                <span class="score">0</span>
+                        </div>
+                        <div class="computer">
+                                <span class="score-title">COMPUTER</span>
+                                <span class="score">0</span>
+                        </div>
+                </div>
+                <div class="current-result">
+                        <div class="res">Draw !</div>
+                        <div class="desc"></div>
+                </div>
+        </div>
+
+        <div class="choice-selection">
+                <div class="title">Select one</div>
+                <div class="btns">
+                        <button id="rock">🪨</button>
+                        <button id="paper">🧾</button>
+                        <button id="scissors">✂️</button>
+                </div>
+        </div>
 </body>
 
 </html>
